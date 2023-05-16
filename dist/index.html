@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Getting Started</title>
     <script src="https://unpkg.com/lodash@4.17.20"></script>
   <script defer src="main.main.js"></script></head>
@@ -9,28 +11,29 @@
     <header>
         <h1>Leaderboard</h1>
     </header>
-    <section>
+    <section class="container">
        <div class="left">
-<article>
+<article class="top">
     <h3>Recent Scores</h3> 
-    <button>Refresh</button>
+    <button type="button">Refresh</button>
 </article>
-<article>
-    <p>Name: 100</p>
-    <p>Name: 20</p>
-    <p>Name: 50</p>
-    <p>Name: 78</p>
-    <p>Name: 125</p>
-    <p>Name: 77</p>
-    <p>Name: 42</p>
+<article class="list">
+    <p class="">Name: 100</p>
+    <p class="grey">Name: 20</p>
+    <p class="">Name: 50</p>
+    <p class="grey">Name: 78</p>
+    <p class="">Name: 125</p>
+    <p class="grey">Name: 77</p>
+    <p class="">Name: 42</p>
 </article>
        </div>
 
        <div class="right">
         <article><h1>Add your score</h1></article>
         <form action="">
-            <input type="text" placeholder="Your name">
-            <input type="text" placeholder="Your score">
+            <input type="text" placeholder="Your name"> <br> <br>
+            <input type="text" placeholder="Your score"> <br> <br>
+            <button class="submit" type="submit">Submit</button>
         </form>
        </div>
     </section>

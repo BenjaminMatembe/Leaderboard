@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("// // eslint-disable-next-line import/no-extraneous-dependencies\n// import _ from 'lodash';\n// import './styles.css';\n\n// function component() {\n//   const element = document.createElement('div');\n\n//   // Lodash, currently included via a script, is required for this line to work\n//   // eslint-disable-next-line no-undef\n//   element.innerHTML = _.join(['Hello', 'webpack'], ' ');\n//   element.classList.add('hello');\n\n//   return element;\n// }\n\n// document.body.appendChild(component());\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("// eslint-disable-next-line no-unused-vars\nconst doc = document.querySelector('.list');\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
 
 /***/ })
 
