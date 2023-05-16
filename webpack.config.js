@@ -1,8 +1,15 @@
 const path = require('path');
+// eslint-disable-next-line import/no-unresolved, import/no-extraneous-dependencies
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
   devServer: {
     static: './dist',
   },
@@ -10,9 +17,6 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
   module: {
     rules: [
