@@ -1,27 +1,19 @@
 const path = require('path');
-// eslint-disable-next-line import/no-unresolved
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
-  ],
   devServer: {
     static: './dist',
   },
+
   output: {
-    filename: '[name].main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-
   optimization: {
     runtimeChunk: 'single',
   },
-
   module: {
     rules: [
       {
@@ -37,8 +29,12 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: /\.(csv|tsv)$/i,
+        use: ['csv-loader'],
+      },
+      {
+        test: /\.xml$/i,
+        use: ['xml-loader'],
       },
 
     ],
