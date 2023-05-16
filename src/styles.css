@@ -1,4 +1,40 @@
-.hello {
-    color: red;
-  }
-  
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list {
+  border: 1px solid black;
+}
+
+.grey {
+  background-color: gray;
+}
+
+.submit {
+  margin-left: 90px;
+}
