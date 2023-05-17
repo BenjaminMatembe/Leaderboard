@@ -1,18 +1,25 @@
 const path = require('path');
+// eslint-disable-next-line import/no-unresolved, import/no-extraneous-dependencies
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
+
   devServer: {
     static: './dist',
   },
 
   output: {
-    filename: 'bundle.js',
+    filename: '[name].main.js',
     path: path.resolve(__dirname, 'dist'),
-  },
-  optimization: {
-    runtimeChunk: 'single',
+    clean: true,
+
   },
   module: {
     rules: [
