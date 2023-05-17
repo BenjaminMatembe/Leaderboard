@@ -27,14 +27,15 @@ body {
   gap: 20px;
 }
 
-.list {
-  border: 1px solid black;
-}
-
 .grey {
   background-color: gray;
 }
 
 .submit {
   margin-left: 90px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
 }
