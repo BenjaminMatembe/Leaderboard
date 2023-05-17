@@ -15,16 +15,11 @@ form.addEventListener('submit', (event) => {
 refreshButton.addEventListener('click', () => {
   getUsersAndScores().then((data) => {
     const names = document.querySelector('.names');
-    const scores = document.querySelector('.scores');
-    scores.innerHTML = '';
     names.innerHTML = '';
     data.result.forEach((user) => {
       const createdUsers = document.createElement('li');
-      const createdScores = document.createElement('li');
-      createdUsers.textContent = `${user.user}`;
-      createdScores.textContent = `${user.score}`;
+      createdUsers.innerHTML = `<span>${user.user}</span> <span>${user.score}</span>`;
       names.appendChild(createdUsers);
-      scores.appendChild(createdScores);
     });
   });
 });
