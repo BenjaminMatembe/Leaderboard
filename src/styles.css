@@ -34,8 +34,8 @@ body {
 .submit {
   margin-left: 90px;
 }
-li{
+
+li {
   display: flex;
   justify-content: space-between;
 }
-
