@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgba(214, 108, 38, 0.402);
 }
 
 .left {
@@ -39,15 +40,18 @@ body {
 li {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(41, 39, 39);
+  background-color: rgba(214, 108, 38, 0.402);
   margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
 }
 
 .list {
-  background-color: rgb(223, 233, 223);
-  border: 2px solid black;
+  background-color: rgba(171, 178, 165, 0.588);
+  border: 5px solid black;
   margin-left: 80px;
-  color: rgb(239, 244, 240);
+  color: black;
+  font-weight: 900;
   max-height: 40vh;
   overflow-y: auto;
 }
@@ -75,4 +79,9 @@ button:hover {
 
 .refresh {
   margin-left: 10px;
+}
+
+input {
+  border: 2px solid black;
+  padding: 10px;
 }
