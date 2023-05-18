@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgba(214, 108, 38, 0.402);
 }
 
 .left {
@@ -25,6 +26,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-left: 100px;
 }
 
 .grey {
@@ -38,4 +40,48 @@ body {
 li {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(214, 108, 38, 0.402);
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.list {
+  background-color: rgba(171, 178, 165, 0.588);
+  border: 5px solid black;
+  margin-left: 80px;
+  color: black;
+  font-weight: 900;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+header {
+  margin-left: 40px;
+  font-size: xx-large;
+}
+
+article h3 {
+  font-size: x-large;
+}
+
+button {
+  color: white;
+  border: none;
+  background-color: rgb(60, 57, 57);
+  cursor: pointer;
+  padding: 8px;
+}
+
+button:hover {
+  box-shadow: 5px 3px #888;
+}
+
+.refresh {
+  margin-left: 10px;
+}
+
+input {
+  border: 2px solid black;
+  padding: 10px;
 }
